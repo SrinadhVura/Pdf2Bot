@@ -15,4 +15,29 @@ Pdf2Bot is a web-app that creates a chatbot on the fly from the document uploade
 3. Navigate to the directory where extracted repository is stored.
 4. Run the following command to install required python libraries
    > pip install -r requirements.txt
+5. Use the below command to run the app
+   > streamlit run app.py
+
+## Procedure
+1. In the sidebar of the web-app click on upload, browse through the local file system and upload the file (As PDF)
+2. After uploading the file click on *Done Uploading* button.
+3. Wait until
+   ```
+   Uploaded
+   Loaded
+   Splitting done
+   Vectorising done
+   ```
+   appears.
+4. Enter the query. Click on *Submit* button
+5. The answer as text and audio will be displayed by the app
+
+
+## Technologies used
+1. Python
+2. Streamlit
+3. Langchain
+4. VertexAI
+5. GTTS
+6. Google Cloud
    
