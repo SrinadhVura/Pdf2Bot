@@ -189,7 +189,7 @@ if done is not None:                # if the user clicks on done uploading, the 
     prompt=st.text_input("Input your query : ")                                                     # take the query from the user
     req_tld=st.selectbox("Choose an accent",["com.au","co.uk","us","ca","co.in","ie","co.za"])          # take the accent from the user
     st.write("* Australian English - com.au\n* British English - co.uk\n* American English - us\n* Canadian English - ca\n* Indian English - co.in\n* Irish English - ie\n* South African English - co.za")
-    size=st.select_slider("Choose the description size in words: ",options=[100,200,500,800,1000])
+    size=st.select_slider("Choose the description size ",options=['very small' ,'small','medium','large','extra large'],values=[100,200,500,800,1000])
     submit=st.button("Submit")
     while submit is None:                                                       # wait for the user to click on submit
         time.sleep(10)
