@@ -196,7 +196,7 @@ if done is not None:                # if the user clicks on done uploading, the 
         while prompt is None:
             time.sleep(10)
         if prompt is not None:                                                  # if the user enters a query, the query is answered
-            prompt=prompt.strip()+" ? in 1000 words"                                
+            prompt=prompt.strip()+" ? "                                
             res=qa({"query":prompt})                                        # pass the query to the chatbot
             print(res)                                                          # print the answer
             myobj = gTTS(text=res["result"],lang='en', slow=False, tld=req_tld) # convert the answer to speech
