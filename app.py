@@ -1,4 +1,4 @@
-"""-----------------------------------------------------------------------------imports----------------------------------------------------------------------------------"""
+#-----------------------------------------------------------------------------imports----------------------------------------------------------------------------------"""
 
 
 import streamlit as st # we are using streamlit to create a web app
@@ -25,7 +25,7 @@ import base64 # we are using base64 to encode the background image
 import time # we are using time to record rate limit
 
 
-"""-----------------------------------------------------------------code to access google cloud service account----------------------------------------------------------------------------------"""
+#-----------------------------------------------------------------code to access google cloud service account----------------------------------------------------------------------------------"""
 
 
 # Load the service account json file
@@ -44,7 +44,7 @@ vertexai.init(project=project_id, location="us-central1")
 
 
 
-"""-----------------------------------------------------------------code of functions to initialize text bison model----------------------------------------------------------------------------------"""
+#-----------------------------------------------------------------code of functions to initialize text bison model----------------------------------------------------------------------------------"""
 
 
 
@@ -99,13 +99,13 @@ llm = VertexAI(
 
 
 
-"""-----------------------------------------------------------------code of the web app design and working----------------------------------------------------------------------------------"""
+#-----------------------------------------------------------------code of the web app design and working----------------------------------------------------------------------------------"""
 
 
 
 
 embeddings = CustomVertexAIEmbeddings(llm=llm,requests_per_minute=1000,num_instances_per_batch=5)       # use embeddings from text bison to create chatbot from PDF provided by user
-title = '<p style="font-family:Algerian; color:#004d00; font-weight:bold;  text-align:center;font-size: 60px;">PDF2Bot</p>'
+title = '<p style="font-family:Algerian; color:#004d00; font-weight:bold;  text-align:center;font-size: 60px;">&#128196 PDF2Bot &#129302</p>'
 st.markdown(title, unsafe_allow_html=True)
 description="<p style='font-family:cursive; color:#66ffff; font-weight:bold; text-align:center; font-size: 14px;'>This app uses google cloud text-bison model to create a chatbot from a PDF provided by the user. The chatbot is trained on the text from the PDF and can be used to answer questions about the PDF.</p>"
 st.markdown(description, unsafe_allow_html=True)
@@ -153,7 +153,7 @@ text-align: center;
 """
 
 
-"""-----------------------------------------------------------------code of the sidebar for uploading the PDF----------------------------------------------------------------------------------"""
+#-----------------------------------------------------------------code of the sidebar for uploading the PDF----------------------------------------------------------------------------------"""
 
 
 
@@ -205,6 +205,3 @@ if done is not None:                # if the user clicks on done uploading, the 
             st.audio(mp3_fp, format='audio/mp3')                                # play the audio file
             st.write("\n\n\n")
             st.write("The answer is : \n",  res["result"])                      # print the answer on the web app
-
-            
-                
