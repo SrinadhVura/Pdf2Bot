@@ -42,6 +42,8 @@ Pdf2Bot is a web-app that creates a chatbot on the fly from the document uploade
 5. GTTS
 6. Google Cloud
 
+[Pdf 2 bot.pdf](https://github.com/SrinadhVura/Pdf2Bot/files/11995424/Pdf.2.bot.pdf)
+
 
    
-[Pdf 2 bot.pptx](https://github.com/SrinadhVura/Pdf2Bot/files/11995420/Pdf.2.bot.pptx)
+
