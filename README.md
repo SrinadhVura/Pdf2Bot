@@ -9,6 +9,7 @@ Pdf2Bot is a web-app that creates a chatbot on the fly from the document uploade
 
 ## How to use Pdf2Bot?
 
+> https://pdf2bot.streamlit.app/
 
 ## How to use Pdf2Bot locally?
 1. Download the repository as a compressed directory, then extract it or using the *git clone* command.
