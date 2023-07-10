@@ -7,9 +7,6 @@ This repository is a submission for **Google Cloud - VertexAI hackathon** conduc
 ## What is Pdf2Bot?
 Pdf2Bot is a web-app that creates a chatbot on the fly from the document uploaded by the user and will be able to answer any kind of query related to the file. The thus built bot also outputs the answer in one of the seven widely accepted accents of English, world-wide.
 
-## How to use Pdf2Bot?
-
-> https://pdf2bot.streamlit.app/
 
 ## How to use Pdf2Bot locally?
 1. Download the repository as a compressed directory, then extract it or using the *git clone* command.
@@ -43,6 +40,8 @@ Pdf2Bot is a web-app that creates a chatbot on the fly from the document uploade
 5. GTTS
 6. Google Cloud
 
+## Note
+Please upload service_account.json and specify its path in app.py to use it
 
 
 
